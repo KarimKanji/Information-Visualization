@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="file" id="infile">
+    <h1> Lessgo</h1>
+
+    
+   
+    <div style="display: none;">
+    <img id="orig-img" src="../assets/img/cat.jpg">
+    </div>
+    
+
+
+    <canvas id="canvas" style=" max-width: 300px;"> </canvas>
+
+   
+
+    <!-- <script>
+        const canvas = document.querySelector('#canvas');
+        const context = canvas.getContext("2d");
+        document.querySelector('#infile').addEventListener('change', uploadFile) //eller (event) => uploadFile(event)
+
+        function uploadFile(event) {
+  //         console.log(event);
+           const reader = new FileReader;
+           const imgUrl = reader.readAsDataURL(event.target.files[0]);
+//           console.log(imgUrl); 
+
+           reader.onload = (event) => {
+            const img = new Image();
+            img.src = event.target.result;
+            console.log(img);
+
+            img.onload = () => {
+                canvas.height = img.height;
+                canvas.width = img.width;
+                context.drawImage(img, 0, 0);
+
+                const imgData = context.getImageData(0, 0, canvas.width, canvas.height);
+                console.log(imgData)
+
+            }
+           }
+        }
+
+    </script> -->
+
+
+
+
+
+    <!-- <script src="script-image-7.js"></script> -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+</body>
+</html>
