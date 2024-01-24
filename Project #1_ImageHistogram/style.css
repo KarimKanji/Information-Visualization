@@ -1,0 +1,31 @@
+
+
+
+html, body {
+    height: 50%;
+    background-color: slategray;
+    margin:0 auto;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+html {
+    display: table;
+   
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+#canvas {
+
+    display: block;
+    padding-left: 30%;
+}
+#infile {
+
+    display: block;
+    padding-left: 30%;
+}
+
